@@ -1,0 +1,17 @@
+.container-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.container-logo h2 {
+  color: #252531;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 11px;
+}
