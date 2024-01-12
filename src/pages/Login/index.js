@@ -38,7 +38,7 @@ function Login() {
 
     return (
         <div className="container-page">
-            <div className="container-page-Login" >
+            <div className="container-page-login" >
                 <LogoMarketCubos />
                 <h2>Boas-vindas!</h2>
                 <p>Use seu e-mail e senha para acessar a conta</p>
