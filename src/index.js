@@ -9,6 +9,10 @@ import Cadastro from './pages/Cadastro';
 
 const router = createBrowserRouter([
   {
+    path: "/",
+    element: <Login />
+  },
+  {
     path: "login",
     element: <Login />
   },
@@ -16,6 +20,7 @@ const router = createBrowserRouter([
     path: "cadastro",
     element: <Cadastro />
   }
+
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
