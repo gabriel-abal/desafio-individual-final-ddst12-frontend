@@ -5,21 +5,29 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
+import App from './App';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Login />
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Login />
+      },
+      {
+        path: "login",
+        element: <Login />
+      },
+      {
+        path: "cadastro",
+        element: <Cadastro />
+      },
+    ]
   },
-  {
-    path: "login",
-    element: <Login />
-  },
-  {
-    path: "cadastro",
-    element: <Cadastro />
-  }
+
 
 ])
 const root = ReactDOM.createRoot(document.getElementById('root'));
