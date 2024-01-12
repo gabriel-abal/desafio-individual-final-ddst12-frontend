@@ -1,8 +1,10 @@
-import './styles.css'
-import LogoMarketCubos from '../../components/LogoMarketCubos'
-import { useState } from 'react'
+import "./styles.css";
+import LogoMarketCubos from "../../components/LogoMarketCubos";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Cadastro() {
+
 
     const [form, setForm] = useState({
         email: '',
@@ -34,18 +36,22 @@ function Cadastro() {
         setForm({ ...form, [e.target.name]: value });
     }
 
-
     return (
         <div className="container-page">
             <div className="container-page-cadastro" >
                 <LogoMarketCubos />
                 <h3>Cadastre-se</h3>
 
-
-
                 <form onSubmit={handleSubmit}>
 
+                    <h4>Nome da Loja</h4>
+                    <input
+                        id="input-loja"
+                        className="input-loja"
+                        type=""
 
+
+                    />
 
                     <h4>E-mail</h4>
                     <input
@@ -83,15 +89,15 @@ function Cadastro() {
                 </button>
 
                 <div>
-                    <p className="paragrafo-cadastrar">
-                        Não possui conta?  Cadastrar
+                    <p className="paragrafo-login">
+                        Já tem uma conta? <Link to="/Login">Fazer login</Link>
                     </p>
                 </div>
 
             </div>
         </div>
     )
-
 }
 
-export default Cadastro
+
+export default Cadastro;
