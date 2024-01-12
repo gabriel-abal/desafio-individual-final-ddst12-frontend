@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
+import Login from './pages/Login';
 import App from './App';
 import ErrorPage from './pages/routes/ErrorPage';
 
