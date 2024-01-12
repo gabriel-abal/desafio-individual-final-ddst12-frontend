@@ -1,6 +1,7 @@
 import "./styles.css";
 import LogoMarketCubos from "../../components/LogoMarketCubos";
 import { useState } from "react";
+import { Routes, Route, Link } from "react-router-dom";
 
 function Login() {
 
@@ -45,7 +46,14 @@ function Login() {
 
                 <form onSubmit={handleSubmit}>
 
+                    <h4>Nome da Loja</h4>
+                    <input
+                        id="input-loja"
+                        className="input-loja"
+                        type=""
 
+
+                    />
 
                     <h4>E-mail</h4>
                     <input
