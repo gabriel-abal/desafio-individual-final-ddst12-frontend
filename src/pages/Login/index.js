@@ -1,10 +1,9 @@
-import "./styles.css";
-import LogoMarketCubos from "../../components/LogoMarketCubos";
-import { useState } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import './styles.css'
+import LogoMarketCubos from '../../components/LogoMarketCubos'
+import { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 function Login() {
-
 
     const [form, setForm] = useState({
         email: '',
@@ -36,24 +35,19 @@ function Login() {
         setForm({ ...form, [e.target.name]: value });
     }
 
+
     return (
         <div className="container-page">
-            <div className="container-page-login" >
+            <div className="container-page-Login" >
                 <LogoMarketCubos />
-                <h3>Boas-vindas!</h3>
-                <p className="informacoes-acesso">Use seu e-mail e senha para acessar a conta</p>
+                <h2>Boas-vindas!</h2>
+                <p>Use seu e-mail e senha para acessar a conta</p>
+
 
 
                 <form onSubmit={handleSubmit}>
 
-                    <h4>Nome da Loja</h4>
-                    <input
-                        id="input-loja"
-                        className="input-loja"
-                        type=""
 
-
-                    />
 
                     <h4>E-mail</h4>
                     <input
@@ -92,14 +86,14 @@ function Login() {
 
                 <div>
                     <p className="paragrafo-cadastrar">
-                        Não possui conta?  Cadastrar
+                        Não possui conta?  <Link to="/cadastro">Cadastrar</Link>
                     </p>
                 </div>
 
             </div>
         </div>
     )
+
 }
 
-
-export default Login;
+export default Login
