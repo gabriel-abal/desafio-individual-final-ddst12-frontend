@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, Outlet, RouterProvider, Navigate } from 'react-router-dom';
 
+import Home from './pages/Home/Home';
 import Cadastro from './pages/Cadastro';
 import Login from './pages/Login';
 import App from './App';
 import ErrorPage from './pages/routes/ErrorPage';
+
+function ProtectedRoutes({ redirectTo }) {
+  const isAuthenticated = true;
+
+  return isAuthenticated ? <Outlet /> : <Navigate to={redirectTo} />
+}
 
 
 const router = createBrowserRouter([
@@ -17,7 +24,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Login />
+        element: <Home />
       },
       {
         path: "login",
