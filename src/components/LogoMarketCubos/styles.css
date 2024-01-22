@@ -6,6 +6,14 @@
 
   margin-top: 32px;
   margin-bottom: 32px;
+  width: 166px;
+  height: 96px;
+}
+
+.logo {
+  width: 57.84px;
+  height: 57.73px;
+  left: 53.68px;
 }
 
 .container-logo h2 {

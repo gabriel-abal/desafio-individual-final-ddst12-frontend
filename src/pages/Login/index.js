@@ -40,26 +40,28 @@ function Login() {
         <div className="container-page">
             <div className="container-page-login" >
                 <LogoMarketCubos />
-                <h2>Boas-vindas!</h2>
-                <p>Use seu e-mail e senha para acessar a conta</p>
+                <h2 className='texto-boas-vindas'>Boas-vindas!</h2>
+                <p className='texto-acesso'>Use seu e-mail e senha para acessar a conta</p>
 
 
 
                 <form onSubmit={handleSubmit}>
 
 
+                    <div className='container-input-email'>
+                        <h4>E-mail</h4>
+                        <input
 
-                    <h4>E-mail</h4>
-                    <input
+                            id="input-email"
+                            className="input-email"
+                            type="email"
+                            placeholder="exemplo@email.com"
+                            name="email"
+                            value={form.email}
+                            onChange={(e) => handleChangeForm(e)}
+                        />
+                    </div>
 
-                        id="input-email"
-                        className="input-email"
-                        type="email"
-                        placeholder="exemplo@email.com"
-                        name="email"
-                        value={form.email}
-                        onChange={(e) => handleChangeForm(e)}
-                    />
 
 
 
@@ -86,7 +88,7 @@ function Login() {
 
                 <div>
                     <p className="paragrafo-cadastrar">
-                        Não possui conta?  <Link to="/cadastro">Cadastrar</Link>
+                        Não possui conta?  <strong className='strong-cadastrar'><Link to="/cadastro">Cadastrar</Link></strong>
                     </p>
                 </div>
 

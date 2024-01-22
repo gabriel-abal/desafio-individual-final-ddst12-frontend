@@ -21,12 +21,41 @@
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
-.container-page-login h3 {
+.texto-boas-vindas {
   font-family: Public Sans;
   font-size: 20px;
   font-weight: 600;
-
+  line-height: 24px;
+  letter-spacing: -0.38217443227767944px;
+  text-align: left;
   margin-bottom: 8px;
+  color: #383842;
+}
+.texto-acesso {
+  font-family: Public Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: -0.38217443227767944px;
+  text-align: left;
+  margin-bottom: 24px;
+  color: #191919;
+}
+
+.container-input-email {
+  width: 382px;
+  height: 67px;
+  margin-bottom: 24px;
+}
+
+form h4 {
+  font-family: Public Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: -0.38217443227767944px;
+  text-align: left;
+  margin-left: 3px;
 }
 
 .informacoes-acesso {
@@ -70,10 +99,6 @@ form input {
   margin-left: 17px;
 }
 
-.input-email {
-  margin-bottom: 24px;
-}
-
 .input-password {
   margin-bottom: 48px;
 }
@@ -101,4 +126,9 @@ button {
   font-family: Public Sans;
   font-size: 16px;
   font-weight: 400;
+}
+
+.strong-cadastrar {
+  all: unset;
+  color: #b7005c;
 }
