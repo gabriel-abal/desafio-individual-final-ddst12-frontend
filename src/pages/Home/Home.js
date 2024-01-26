@@ -1,29 +1,16 @@
 import React from 'react'
-import api from '../../services/api'
-import { useEffect } from 'react';
+import './styles.css'
+import NavbarHome from '../../components/NavbarHome';
 
 
 const Home = () => {
 
-    async function listarUsuarios() {
-        try {
-            const response = await api.get('');
-            console.log(response)
-        } catch (error) {
-            console.log(error)
-        }
-
-    }
-
-
-    useEffect(() => {
-        listarUsuarios();
-    }, []);
-
-
     return (
-        <div>Home</div>
-
+        <div className='container-home'>
+            <NavbarHome />
+            <main>
+            </main>
+        </div>
     )
 }
 
