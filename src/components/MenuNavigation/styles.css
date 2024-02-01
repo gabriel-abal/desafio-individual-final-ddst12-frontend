@@ -1,0 +1,17 @@
+.nav-icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.name-icon {
+  padding-left: 8px;
+  color: #383842;
+
+  /* Headline/H6 */
+  font-family: "Public Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.382px;
+}

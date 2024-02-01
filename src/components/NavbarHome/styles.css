@@ -1,4 +1,16 @@
-/* nav {
+nav {
   height: 112px;
   background-color: #fdfdfd;
-} */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuContainer {
+  display: flex;
+  align-items: center;
+}
+
+.MenuNavigation {
+  padding-left: 2.4rem;
+}
